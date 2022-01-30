@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Quiero_Pizza.web
+namespace Quieropizza.web
 {
     public class RouteConfig
     {
