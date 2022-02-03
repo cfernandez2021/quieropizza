@@ -9,11 +9,12 @@ namespace QuieroPizza.BL
     public class ProductosBL
     {
         Contexto _contexto;
+        public List<Producto> ListadeProductos { get; set; }
 
         public ProductosBL()
         {
             _contexto = new Contexto();
-        
+            ListadeProductos = new List<Producto>();
 
 
 
@@ -21,7 +22,7 @@ namespace QuieroPizza.BL
         public List<Producto> obtenerProductos()
         {
             _contexto.Productos.ToList();
-
+            ListadeProductos = _contexto.Productos.ToList();
            
 
             return _contexto.Productos.ToList();
